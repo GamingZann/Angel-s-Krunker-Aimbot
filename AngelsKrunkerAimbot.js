@@ -3055,7 +3055,7 @@ window.chatmessage = window.Ze = (t, e, i) => {
       linkToUse7 = links[Math.floor(Math.random() * links.length)];
       //tanitim belgeseli
 var colorize,lnk,text,ministyler
-lnk = ["Dis Hack Aweasome"];
+lnk = ["SLITHERE.COM", "KRUNKERIO.ORG", "KRUNKERIO.NET", "SHELLSHOCKIO.ORG", "MOOMOOIOPLAY.COM", "SURVIVIO.INFO", "ZOMBSROYALEIO.ORG", "MOPE-IO.NET", "MOPEIOGAME.COM", "DIEPIOPLAY.COM", "DIEPIOPLAY.ORG", "SLITHERIOPLAY.ORG", "SKRIBBL-IO.NET", "SPINZ-IO.NET", "BONK-IO.NET", "DEEEEP-IO.NET", "IOGAMESLIST.ORG", "IOMODS.ORG"];
 text = "<b>";
 lnk.forEach(lnkfunc);
 text += "</b>";
