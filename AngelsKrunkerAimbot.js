@@ -3045,7 +3045,7 @@ window.chatmessage = window.Ze = (t, e, i) => {
         valueToUse = values[Math.floor(Math.random() * values.length)];
         valueToUse2 = values[Math.floor(Math.random() * values.length)];
         valueToUse3 = values[Math.floor(Math.random() * values.length)];
-    var links = ["youtube.com/pewdiepie","youtube.com/pewdiepie","youtube.com/pewdiepie","youtube.com/pewdiepie","youtube.com/pewdiepie","youtube.com/pewdiepie","youtube.com/pewdiepie","youtube.com/pewdiepie","youtube.com/pewdiepie","youtube.com/pewdiepie"],
+    var links = ["www.youtube.com/pewdiepie","www.youtube.com/pewdiepie","www.youtube.com/pewdiepie","www.youtube.com/pewdiepie","www.youtube.com/pewdiepie","www.youtube.com/pewdiepie","www.youtube.com/pewdiepie","www.youtube.com/pewdiepie","www.youtube.com/pewdiepie","www.youtube.com/pewdiepie"],
         linkToUse = links[Math.floor(Math.random() * links.length)];
       linkToUse1 = links[Math.floor(Math.random() * links.length)];
       linkToUse2 = links[Math.floor(Math.random() * links.length)];
@@ -3056,11 +3056,18 @@ window.chatmessage = window.Ze = (t, e, i) => {
       linkToUse7 = links[Math.floor(Math.random() * links.length)];
       //tanitim belgeseli
 var colorize,lnk,text,ministyler
-lnk = ["Click Here", "Click Here", "Click Here", "Click Here", "Click Here", "Click Here", "Click Here", "Click Here", "Click Here", "Click Here", "Click Here", "Click Here", "Click Here", "Click Here", "Click Here", "Click Here", "Click Here", "Click Here"];
+lnk = ["Dont", "click", "here", "or", "else", "you", "will", "die", "but", "really", "DIEPIOPLAY.ORG", "please", "click", "here", "i", "need", "your", "money"];
 text = "<b>";
 lnk.forEach(lnkfunc);
 text += "</b>";
 
+function lnkfunc(value) {
+var value2 = value;
+if(value == "Dont" || value == "Click" || value == "here" || value == "or") { colorize = true; } else { colorize = false; }
+if(value == "else") { value2="you"; } if(value == "will") { value2="die"; } if(value == "but") { value2="really"; } if(value == "please") { value2="click"; } if(value == "here") { value2="i"; } if(value == "need") { value2="your"; }
+if(colorize == false){ministyler = "color:white;font-size:11px;padding:0px;";} else {ministyler = "color:yellow;font-size:11px;padding:0px;";}
+text += '<a href="http://'+value+'" target="_blank" style="'+ministyler+'">'+value2+'</a> - ';
+}
 //genel isimlendirme ve ayarlar
  this.settings = {
             feature1: "Show FPS",
