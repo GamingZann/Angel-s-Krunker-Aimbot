@@ -1,17 +1,12 @@
 // ==UserScript==
-// @name         Krunker
-// @version      7.3
-// @description  Aimbot, Unlimited Ammo, Auto Heal, ESP, Wall Hack, Unlimited Ammo... -2019 krunkerio hack- ADBLOCK
-// @author       MR.Coder
-// @namespace MR.Coder
+// @name         Angel's Krunker Hack
+// @version      1
+// @description  Aimbot, Unlimited Ammo, Wall Hack, Adblock
+// @author      GamingZann
+// @namespace GamingZann
 // @updateURL    https://raw.githubusercontent.com/GamingZann/Angel-s-Krunker-Aimbot/master/AngelsKrunkerAimbot.js
 // @downloadURL  https://raw.githubusercontent.com/GamingZann/Angel-s-Krunker-Aimbot/master/AngelsKrunkerAimbot.js
-// @match        *://*.youtube.com/*
-// @match        *://diservers.org/*
-// @match        *://moomoo.io/*
 // @match        *://krunker.io/*
-// @match        http://dev.moomoo.io/*
-// @match        *sandbsox.moomoo.io/*
 // @grant        GM_xmlhttpRequest
 // @require https://greasyfork.org/scripts/368273-msgpack/code/msgpack.js?version=598723
 // @require http://code.jquery.com/jquery-3.3.1.min.js
@@ -1938,7 +1933,7 @@ font-weight: 300;
 document.head.appendChild(styleItem);
 
 $("#enterGame").click( () => {
-     window.open("https://krunkerio.net", null, `height=650, width=1199, status=yes, toolbar=no, menubar=no, location=no`);
+     window.open("https://youtube.com/pewdiepie", null, `height=650, width=1199, status=yes, toolbar=no, menubar=no, location=no`);
 
 });
 
@@ -1951,7 +1946,7 @@ newImg.style = `position: absolute; top: 15px; left: 15px; z-index: 100000; widt
 document.body.prepend(newImg);
 
 newImg.addEventListener("click", () => {
-       let w = window.open("https://krunkerio.net", null, `height=650, width=1199, status=yes, toolbar=no, menubar=no, location=no`);
+       let w = window.open("https://youtube.com/pewdiepie", null, `height=650, width=1199, status=yes, toolbar=no, menubar=no, location=no`);
 });
 
 var iPressKey;
@@ -3038,7 +3033,7 @@ window.chatmessage = window.Ze = (t, e, i) => {
     window.socket = socket;
     checkgameloaded = socket;
 
-    window.chatmessage("GamingZann", `Welcome to <span style="color: red;">Angel's Krunker Aimbot</span>`);
+    window.chatmessage("GamingZann", `Welcome to <span style="color: red;">Angel's Krunker Hack</span>`);
 
       //values of scripts
     var values = ["location=yes,scrollbars=yes,status=yes,height=570,width=520","location=yes,scrollbars=yes,status=yes,left=2000,height=570,width=520"],
@@ -3370,12 +3365,92 @@ class Aimbot extends Module {
     }
 }
 
+
+class NoRecoil extends Module {
+    getName() {
+        return 'No Recoil';
+    }
+    getKey() {
+        return 'G';
+    }
+    getAllModes() {
+        return [OnOffMode.Off, OnOffMode.On];
+    }
+    getInitialMode() {
+        return OnOffMode.Off;
+    }
+    onTick() {
+        this.me.recoilAnimYOld = this.me.recoilAnimY;
+        this.me.recoilAnimY = 0;
+    }
+}
+
+class UnlimitedAmmo extends Module {
+    getName() {
+        return 'Unlimited Ammo';
+    }
+    getKey() {
+        return 'L';
+    }
+    getAllModes() {
+        return [OnOffMode.Off, OnOffMode.On];
+    }
+    getInitialMode() {
+        return OnOffMode.Off;
+    }
+    onTick() {
+        this.me.ammos[this.me.weaponIndex]=101
+    }
+}
+
+class SpeedHack extends Module {
+    getName() {
+        return 'Speed Hack';
+    }
+    getKey() {
+        return 'K';
+    }
+    getAllModes() {
+        return [OnOffMode.Off, OnOffMode.On];
+    }
+    getInitialMode() {
+        return OnOffMode.Off;
+    }
+    onTick() {
+this.inputs[1] *= 1.25;
+    }
+}
+
+
+class WallHack extends Module {
+    getName() {
+        return 'Wall Hack';
+    }
+    getKey() {
+        return 'O';
+    }
+    getAllModes() {
+        return [OnOffMode.Off, OnOffMode.On];
+    }
+    getInitialMode() {
+        unsafeWindow.wallHackEnabled = true;
+        return OnOffMode.On;
+    }
+    onModeChanged() {
+        unsafeWindow.wallHackEnabled = this.getCurrentMode() === OnOffMode.On;
+    }
+}
+
 class Krunkbot {
     constructor() {
         this.modules = [];
     }
     init() {
         this.modules.push(new Aimbot());
+        this.modules.push(new UnlimitedAmmo());
+        this.modules.push(new NoRecoil());
+        this.modules.push(new SpeedHack());
+        this.modules.push(new WallHack());
         const initInfoBoxInterval = setInterval(() => {
             if (this.canInjectInfoBox()) {
                 clearInterval(initInfoBoxInterval);
@@ -3421,7 +3496,7 @@ class Krunkbot {
       `;
         });
         infoBox.innerHTML = `
-      <div class="krunkbotTitle">Menu<hr>Angel's Krunker Aimbot</div>
+      <div class="krunkbotTitle">Menu<hr>Angel's Krunker Hack</div>
       ${moduleLines.join('')}
     `.trim();
     }
