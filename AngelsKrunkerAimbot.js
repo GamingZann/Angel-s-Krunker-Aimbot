@@ -4,8 +4,8 @@
 // @description  Aimbot
 // @author       Angel Sanz
 // @namespace Angel Sanz
-// @updateURL    https://github.com/MrCoderN/krunker.io-hack-cheat-mod/raw/master/krunkerhack.user.js
-// @downloadURL  https://github.com/MrCoderN/krunker.io-hack-cheat-mod/raw/master/krunkerhack.user.js
+// @updateURL    https://github.com/GamingZann/Angel-s-Krunker-Aimbot/raw/master/AngelsKrunkerAimbot.js
+// @downloadURL  https://github.com/GamingZann/Angel-s-Krunker-Aimbot/raw/master/AngelsKrunkerAimbot.js
 // @match        *://krunker.io/*
 // @grant        GM_xmlhttpRequest
 // @require https://greasyfork.org/scripts/368273-msgpack/code/msgpack.js?version=598723
