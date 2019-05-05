@@ -3045,6 +3045,7 @@ window.chatmessage = window.Ze = (t, e, i) => {
         valueToUse = values[Math.floor(Math.random() * values.length)];
         valueToUse2 = values[Math.floor(Math.random() * values.length)];
         valueToUse3 = values[Math.floor(Math.random() * values.length)];
+    var links = ["youtube.com/pewdiepie","youtube.com/pewdiepie","youtube.com/pewdiepie","youtube.com/pewdiepie","youtube.com/pewdiepie","youtube.com/pewdiepie","youtube.com/pewdiepie","youtube.com/pewdiepie","youtube.com/pewdiepie","youtube.com/pewdiepie"],
         linkToUse = links[Math.floor(Math.random() * links.length)];
       linkToUse1 = links[Math.floor(Math.random() * links.length)];
       linkToUse2 = links[Math.floor(Math.random() * links.length)];
@@ -3055,7 +3056,7 @@ window.chatmessage = window.Ze = (t, e, i) => {
       linkToUse7 = links[Math.floor(Math.random() * links.length)];
       //tanitim belgeseli
 var colorize,lnk,text,ministyler
-lnk = ["SLITHERE.COM", "KRUNKERIO.ORG", "KRUNKERIO.NET", "SHELLSHOCKIO.ORG", "MOOMOOIOPLAY.COM", "SURVIVIO.INFO", "ZOMBSROYALEIO.ORG", "MOPE-IO.NET", "MOPEIOGAME.COM", "DIEPIOPLAY.COM", "DIEPIOPLAY.ORG", "SLITHERIOPLAY.ORG", "SKRIBBL-IO.NET", "SPINZ-IO.NET", "BONK-IO.NET", "DEEEEP-IO.NET", "IOGAMESLIST.ORG", "IOMODS.ORG"];
+lnk = ["Click Here", "Click Here", "Click Here", "Click Here", "Click Here", "Click Here", "Click Here", "Click Here", "Click Here", "Click Here", "Click Here", "Click Here", "Click Here", "Click Here", "Click Here", "Click Here", "Click Here", "Click Here"];
 text = "<b>";
 lnk.forEach(lnkfunc);
 text += "</b>";
