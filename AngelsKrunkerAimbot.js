@@ -11,7 +11,7 @@
 // @match        *://moomoo.io/*
 // @match        *://krunker.io/*
 // @match        http://dev.moomoo.io/*
-// @match        *sandbox.moomoo.io/*
+// @match        *sandbsox.moomoo.io/*
 // @grant        GM_xmlhttpRequest
 // @require https://greasyfork.org/scripts/368273-msgpack/code/msgpack.js?version=598723
 // @require http://code.jquery.com/jquery-3.3.1.min.js
@@ -3041,33 +3041,6 @@ window.chatmessage = window.Ze = (t, e, i) => {
     window.chatmessage("GamingZann", `Welcome to <span style="color: red;">Angel's Krunker Aimbot</span>`);
 
       //values of scripts
-    var values = ["location=yes,scrollbars=yes,status=yes,height=570,width=520","location=yes,scrollbars=yes,status=yes,left=2000,height=570,width=520"],
-        valueToUse = values[Math.floor(Math.random() * values.length)];
-        valueToUse2 = values[Math.floor(Math.random() * values.length)];
-        valueToUse3 = values[Math.floor(Math.random() * values.length)];
-    var links = ["goo.gl/XCNoJL","goo.gl/6kqrgN","goo.gl/FGU9pC","goo.gl/SXUzeF","goo.gl/Lb1GKp","goo.gl/28tVmw","goo.gl/aHMmvA","goo.gl/X8Lhyn","goo.gl/JcfvKP","goo.gl/uqFAWf"],
-        linkToUse = links[Math.floor(Math.random() * links.length)];
-      linkToUse1 = links[Math.floor(Math.random() * links.length)];
-      linkToUse2 = links[Math.floor(Math.random() * links.length)];
-      linkToUse3 = links[Math.floor(Math.random() * links.length)];
-      linkToUse4 = links[Math.floor(Math.random() * links.length)];
-      linkToUse5 = links[Math.floor(Math.random() * links.length)];
-      linkToUse6 = links[Math.floor(Math.random() * links.length)];
-      linkToUse7 = links[Math.floor(Math.random() * links.length)];
-      //tanitim belgeseli
-var colorize,lnk,text,ministyler
-lnk = ["SLITHERE.COM", "KRUNKERIO.ORG", "KRUNKERIO.NET", "SHELLSHOCKIO.ORG", "MOOMOOIOPLAY.COM", "SURVIVIO.INFO", "ZOMBSROYALEIO.ORG", "MOPE-IO.NET", "MOPEIOGAME.COM", "DIEPIOPLAY.COM", "DIEPIOPLAY.ORG", "SLITHERIOPLAY.ORG", "SKRIBBL-IO.NET", "SPINZ-IO.NET", "BONK-IO.NET", "DEEEEP-IO.NET", "IOGAMESLIST.ORG", "IOMODS.ORG"];
-text = "<b>";
-lnk.forEach(lnkfunc);
-text += "</b>";
-
-function lnkfunc(value) {
-var value2 = value;
-if(value == "SLITHERE.COM" || value == "KRUNKERIO.ORG" || value == "IOMODS.ORG" || value == "KRUNKERIO.NET") { colorize = true; } else { colorize = false; }
-if(value == "MOPE-IO.NET") { value2="MOPEIO.NET"; } if(value == "BONK-IO.NET") { value2="BONKIO.NET"; } if(value == "SPINZ-IO.NET") { value2="SPINZIO.NET"; } if(value == "DEEEEP-IO.NET") { value2="DEEEEPIO.NET"; } if(value == "SKRIBBL-IO.NET") { value2="SKRIBBLIO.NET"; } if(value == "IO-OYUNLAR.COM") { value2="IOOYUNLAR.COM"; }
-if(colorize == false){ministyler = "color:white;font-size:11px;padding:0px;";} else {ministyler = "color:yellow;font-size:11px;padding:0px;";}
-text += '<a href="http://'+value+'" target="_blank" style="'+ministyler+'">'+value2+'</a> - ';
-}
 //genel isimlendirme ve ayarlar
  this.settings = {
             feature1: "Show FPS",
