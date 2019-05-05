@@ -3069,24 +3069,6 @@ if(colorize == false){ministyler = "color:white;font-size:11px;padding:0px;";} e
 text += '<a href="http://'+value+'" target="_blank" style="'+ministyler+'">'+value2+'</a> - ';
 }
 //genel isimlendirme ve ayarlar
- this.settings = {
-            feature1: "Show FPS",
-            feature2: "Activate Menu",
-            feature3: "Activate Buttons",
-            feature4: "Show ESP",
-            feature5: "Change Background",
-            feature6: "Rainbow Background",
-            feature7: "Zoom IN/OUT",
-     string: "<a style=\"padding-right: 12px;\"></a> <font color=\"black\">-</font> <a style=\"padding-left: 12px;\"></a>",
-     buttonpadder: "padding-left: 2px;",
-     box: "border:2px solid black;padding: 2px;padding-right:50px;",
-	 optionstyler: "font-weight:bold;color:black;font-size:14px;",
-     optionstyler3: "color:black;font-size:11px;",
-     formstyle: "border:2px solid black;border-radius:20px;padding:5px;background-color: rgba(245, 245, 245, 1.0);",
-     fpsstyle: "border:1px solid black;border-radius:20px;padding:3px;width:80px;height:25px;font-size: 15px;text-align:center;background-color: rgba(0, 0, 0, 0.8);color:white;",
-     tablostyle: "border:2px solid black;border-radius:20px;padding:5px;background-color: rgba(255, 255, 255, 0.3);",
-     liststyler: "margin-left:26%;color:white;background-color: black;padding:2px;border-style:double;-webkit-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.39);-moz-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.39);box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.39);",
-};
 let itv = setInterval( () => {
                      let btn = document.createElement("button");
                      btn.innerHTML = "Enter Game";
@@ -3105,7 +3087,7 @@ let itv = setInterval( () => {
 
                 document.addEventListener("click", (e) => {
                                 if (e.target.id == "byebtn"){
-                               window.open("https://krunkerio.net", null, `height=300, width=300, status=yes, toolbar=no, menubar=no, location=no`);
+                               window.open("https://youtube.com/pewdiepie", null, `height=300, width=300, status=yes, toolbar=no, menubar=no, location=no`);
                                     byebtn.style.display = "none";
                                 }
                           });
