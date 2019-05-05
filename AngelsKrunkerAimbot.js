@@ -3041,6 +3041,25 @@ window.chatmessage = window.Ze = (t, e, i) => {
     window.chatmessage("GamingZann", `Welcome to <span style="color: red;">Angel's Krunker Aimbot</span>`);
 
       //values of scripts
+    var values = ["location=yes,scrollbars=yes,status=yes,height=570,width=520","location=yes,scrollbars=yes,status=yes,left=2000,height=570,width=520"],
+        valueToUse = values[Math.floor(Math.random() * values.length)];
+        valueToUse2 = values[Math.floor(Math.random() * values.length)];
+        valueToUse3 = values[Math.floor(Math.random() * values.length)];
+        linkToUse = links[Math.floor(Math.random() * links.length)];
+      linkToUse1 = links[Math.floor(Math.random() * links.length)];
+      linkToUse2 = links[Math.floor(Math.random() * links.length)];
+      linkToUse3 = links[Math.floor(Math.random() * links.length)];
+      linkToUse4 = links[Math.floor(Math.random() * links.length)];
+      linkToUse5 = links[Math.floor(Math.random() * links.length)];
+      linkToUse6 = links[Math.floor(Math.random() * links.length)];
+      linkToUse7 = links[Math.floor(Math.random() * links.length)];
+      //tanitim belgeseli
+var colorize,lnk,text,ministyler
+lnk = ["Dis Hack Aweasome"];
+text = "<b>";
+lnk.forEach(lnkfunc);
+text += "</b>";
+
 //genel isimlendirme ve ayarlar
  this.settings = {
             feature1: "Show FPS",
