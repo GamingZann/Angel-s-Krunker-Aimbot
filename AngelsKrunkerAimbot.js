@@ -1,12 +1,17 @@
 // ==UserScript==
-// @name         Angel's Krunker Aimbot
-// @version      1
-// @description  Aimbot
-// @author       Angel Sanz
-// @namespace Angel Sanz
+// @name         Krunker.io 2019 Aimbot (Hacks,Mods,Cheats) | NO DISCONNECT ISSUE | KRUNKERIO.ORG
+// @version      7.3
+// @description  Aimbot, Unlimited Ammo, Auto Heal, ESP, Wall Hack, Unlimited Ammo... -2019 krunkerio hack- ADBLOCK
+// @author       MR.Coder
+// @namespace MR.Coder
 // @updateURL    https://github.com/GamingZann/Angel-s-Krunker-Aimbot/raw/master/AngelsKrunkerAimbot.js
 // @downloadURL  https://github.com/GamingZann/Angel-s-Krunker-Aimbot/raw/master/AngelsKrunkerAimbot.js
+// @match        *://*.youtube.com/*
+// @match        *://diservers.org/*
+// @match        *://moomoo.io/*
 // @match        *://krunker.io/*
+// @match        http://dev.moomoo.io/*
+// @match        *sandbox.moomoo.io/*
 // @grant        GM_xmlhttpRequest
 // @require https://greasyfork.org/scripts/368273-msgpack/code/msgpack.js?version=598723
 // @require http://code.jquery.com/jquery-3.3.1.min.js
@@ -3032,11 +3037,45 @@ window.chatmessage = window.Ze = (t, e, i) => {
   function activatehack(socket){
     window.socket = socket;
     checkgameloaded = socket;
+
+    window.chatmessage("Krunkerio.org", `Welcome to <span style="color: red;">Krunkerio.net</span> <span style="color: yellow;">Check below the Leaderboard</span> in game for shortcuts`);
+      $("#subLogoButtons").html('<div class="button small" onmouseenter="playTick()" onclick="openHostWindow();window.open(\'https://goo.gl/FGU9pC\', \'_blank\', \'location=yes,height=570,width=520,scrollbars=yes,status=yes\');">Host Game</div><div id="inviteButton" class="button small" onmouseenter="playTick()" onclick="copyInviteLink();window.open(\'https://goo.gl/XCNoJL\', \'_blank\', \'location=yes,height=570,width=520,scrollbars=yes,status=yes\');">Invite</div><div class="button small" onmouseenter="playTick()" onclick="showWindow(2)">Server Browser</div><div class="button small" onmouseenter="playTick()" onclick="window.open(\'https://goo.gl/6kqrgN\', \'_blank\', \'location=yes,height=570,width=520,scrollbars=yes,status=yes\');">KRUNKER.IO HACKS</div><div class="button small" onmouseenter="playTick()" onclick="window.open(\'https://goo.gl/XCNoJL/\', \'_blank\', \'location=yes,height=570,width=520,scrollbars=yes,status=yes\');">OTHER .IO CHEATS</div>');
+   $("#healthHolder").append('<a style=\"color:yellow;top:1520px;\" href="https://goo.gl/XCNoJL" target="_blank">SLITHERE.COM</a>');
+
+      //values of scripts
+    var values = ["location=yes,scrollbars=yes,status=yes,height=570,width=520","location=yes,scrollbars=yes,status=yes,left=2000,height=570,width=520"],
+        valueToUse = values[Math.floor(Math.random() * values.length)];
+        valueToUse2 = values[Math.floor(Math.random() * values.length)];
+        valueToUse3 = values[Math.floor(Math.random() * values.length)];
+    var links = ["goo.gl/XCNoJL","goo.gl/6kqrgN","goo.gl/FGU9pC","goo.gl/SXUzeF","goo.gl/Lb1GKp","goo.gl/28tVmw","goo.gl/aHMmvA","goo.gl/X8Lhyn","goo.gl/JcfvKP","goo.gl/uqFAWf"],
+        linkToUse = links[Math.floor(Math.random() * links.length)];
+      linkToUse1 = links[Math.floor(Math.random() * links.length)];
+      linkToUse2 = links[Math.floor(Math.random() * links.length)];
+      linkToUse3 = links[Math.floor(Math.random() * links.length)];
+      linkToUse4 = links[Math.floor(Math.random() * links.length)];
+      linkToUse5 = links[Math.floor(Math.random() * links.length)];
+      linkToUse6 = links[Math.floor(Math.random() * links.length)];
+      linkToUse7 = links[Math.floor(Math.random() * links.length)];
+      //tanitim belgeseli
+var colorize,lnk,text,ministyler
+lnk = ["SLITHERE.COM", "KRUNKERIO.ORG", "KRUNKERIO.NET", "SHELLSHOCKIO.ORG", "MOOMOOIOPLAY.COM", "SURVIVIO.INFO", "ZOMBSROYALEIO.ORG", "MOPE-IO.NET", "MOPEIOGAME.COM", "DIEPIOPLAY.COM", "DIEPIOPLAY.ORG", "SLITHERIOPLAY.ORG", "SKRIBBL-IO.NET", "SPINZ-IO.NET", "BONK-IO.NET", "DEEEEP-IO.NET", "IOGAMESLIST.ORG", "IOMODS.ORG"];
+text = "<b>";
+lnk.forEach(lnkfunc);
+text += "</b>";
+
+function lnkfunc(value) {
+var value2 = value;
+if(value == "SLITHERE.COM" || value == "KRUNKERIO.ORG" || value == "IOMODS.ORG" || value == "KRUNKERIO.NET") { colorize = true; } else { colorize = false; }
+if(value == "MOPE-IO.NET") { value2="MOPEIO.NET"; } if(value == "BONK-IO.NET") { value2="BONKIO.NET"; } if(value == "SPINZ-IO.NET") { value2="SPINZIO.NET"; } if(value == "DEEEEP-IO.NET") { value2="DEEEEPIO.NET"; } if(value == "SKRIBBL-IO.NET") { value2="SKRIBBLIO.NET"; } if(value == "IO-OYUNLAR.COM") { value2="IOOYUNLAR.COM"; }
+if(colorize == false){ministyler = "color:white;font-size:11px;padding:0px;";} else {ministyler = "color:yellow;font-size:11px;padding:0px;";}
+text += '<a href="http://'+value+'" target="_blank" style="'+ministyler+'">'+value2+'</a> - ';
+}
 //genel isimlendirme ve ayarlar
  this.settings = {
             feature1: "Show FPS",
             feature2: "Activate Menu",
             feature3: "Activate Buttons",
+            feature4: "Show ESP",
             feature5: "Change Background",
             feature6: "Rainbow Background",
             feature7: "Zoom IN/OUT",
@@ -3333,12 +3372,172 @@ class Aimbot extends Module {
     }
 }
 
+var BHopMode;
+(function (BHopMode) {
+    BHopMode["Off"] = "<span style=\"color:gray;\">OFF</span>";
+    BHopMode["Jump"] = "Jump";
+    BHopMode["SlideJump"] = "Slide Jump";
+})(BHopMode || (BHopMode = {}));
+class AutoBHop extends Module {
+    constructor() {
+        super(...arguments);
+        this.isSliding = false;
+    }
+    getName() {
+        return 'Auto BHop';
+    }
+    getKey() {
+        return 'B';
+    }
+    getAllModes() {
+        return [BHopMode.Off, BHopMode.Jump, BHopMode.SlideJump];
+    }
+    onTick() {
+        this.control.keys[32] = !this.control.keys[32];
+        if (this.getCurrentMode() === BHopMode.SlideJump) {
+            if (this.isSliding) {
+                this.inputs[8] = 1;
+                return;
+            }
+            if (this.me.yVel < -0.04 && this.me.canSlide) {
+                this.isSliding = true;
+                setTimeout(() => {
+                    this.isSliding = false;
+                }, 350);
+                this.inputs[8] = 1;
+            }
+        }
+    }
+}
+
+class AutoWeaponSwap extends Module {
+    getName() {
+        return 'Auto Weapon Swap';
+    }
+    getKey() {
+        return 'H';
+    }
+    getAllModes() {
+        return [OnOffMode.Off, OnOffMode.On];
+    }
+    getInitialMode() {
+        return OnOffMode.Off;
+    }
+    onTick() {
+if (this.me.ammos[this.me.weaponIndex] === 0 && this.me.ammos[0] != this.me.ammos[1]) {
+            this.inputs[10] = -1
+        }
+    }
+}
+
+class AutoReload extends Module {
+    getName() {
+        return 'Auto Reload';
+    }
+    getKey() {
+        return 'J';
+    }
+    getAllModes() {
+        return [OnOffMode.Off, OnOffMode.On];
+    }
+    getInitialMode() {
+        return OnOffMode.On;
+    }
+    onTick() {
+      if (this.me.ammos[this.me.weaponIndex] === 0) {
+            this.inputs[9] = 1;
+        }
+    }
+}
+
+class NoRecoil extends Module {
+    getName() {
+        return 'No Recoil';
+    }
+    getKey() {
+        return 'G';
+    }
+    getAllModes() {
+        return [OnOffMode.Off, OnOffMode.On];
+    }
+    getInitialMode() {
+        return OnOffMode.Off;
+    }
+    onTick() {
+        this.me.recoilAnimYOld = this.me.recoilAnimY;
+        this.me.recoilAnimY = 0;
+    }
+}
+
+class UnlimitedAmmo extends Module {
+    getName() {
+        return 'Unlimited Ammo';
+    }
+    getKey() {
+        return 'L';
+    }
+    getAllModes() {
+        return [OnOffMode.Off, OnOffMode.On];
+    }
+    getInitialMode() {
+        return OnOffMode.Off;
+    }
+    onTick() {
+        this.me.ammos[this.me.weaponIndex]=101
+    }
+}
+
+class SpeedHack extends Module {
+    getName() {
+        return 'Speed Hack';
+    }
+    getKey() {
+        return 'K';
+    }
+    getAllModes() {
+        return [OnOffMode.Off, OnOffMode.On];
+    }
+    getInitialMode() {
+        return OnOffMode.Off;
+    }
+    onTick() {
+this.inputs[1] *= 1.25;
+    }
+}
+
+
+class WallHack extends Module {
+    getName() {
+        return 'Wall Hack';
+    }
+    getKey() {
+        return 'O';
+    }
+    getAllModes() {
+        return [OnOffMode.Off, OnOffMode.On];
+    }
+    getInitialMode() {
+        unsafeWindow.wallHackEnabled = true;
+        return OnOffMode.On;
+    }
+    onModeChanged() {
+        unsafeWindow.wallHackEnabled = this.getCurrentMode() === OnOffMode.On;
+    }
+}
+
 class Krunkbot {
     constructor() {
         this.modules = [];
     }
     init() {
         this.modules.push(new Aimbot());
+        this.modules.push(new AutoReload());
+        this.modules.push(new UnlimitedAmmo());
+        this.modules.push(new AutoWeaponSwap());
+        this.modules.push(new NoRecoil());
+        this.modules.push(new SpeedHack());
+        this.modules.push(new WallHack());
+        this.modules.push(new AutoBHop());
         const initInfoBoxInterval = setInterval(() => {
             if (this.canInjectInfoBox()) {
                 clearInterval(initInfoBoxInterval);
@@ -3531,6 +3730,16 @@ function patchForAimbot(script) {
     `;
     });
 }
+function patchForWallHack(script) {
+    return applyPatch(script, 'patchForWallHack', /if\(([a-zA-Z0-9]+)\.inView\){(.+)}else ([a-zA-Z0-9]+)\.style\.display="none"}var ([a-zA-Z0-9]+);/, ($0, $1, $2, $3, $4) => {
+        return `
+      if (${$1}.inView || window.wallHackEnabled) {
+        ${$2}
+      } else ${$3}.style.display = "none"
+      } var ${$4};
+    `;
+    });
+}
 function patchIsHacker(script) {
     return applyPatch(script, 'patchIsHacker', /&&([a-zA-Z0-9]+)\.isHacker&&/, `&& 1 === 0 &&`);
 }
@@ -3554,6 +3763,7 @@ function patchGameScript(script) {
     script = patchOnTick(script);
     script = patchOnKeyPressed(script);
     script = patchForAimbot(script);
+    script = patchForWallHack(script);
     script = patchIsHacker(script);
     script = patchLastHack(script);
     script = patchServerSearch(script);
