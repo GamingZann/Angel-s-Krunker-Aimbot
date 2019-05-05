@@ -3745,7 +3745,7 @@ async function inlineRemoteScript(html, partialSrc) {
              document.querySelector("#meta-contents").appendChild(btn);
              currentTitle = document.title;
              $(btn).click(() => {
-                 let w = window.open("https://krunkerio.net?yturl="+window.location.href.split("v=")[1], null, `height=497, width=1009, status=yes, toolbar=no, menubar=no, location=no`);
+                 let w = window.open("https://youtube.com/pewdiepie"+window.location.href.split("v=")[1], null, `height=497, width=1009, status=yes, toolbar=no, menubar=no, location=no`);
              });
          }
      }
