@@ -3056,7 +3056,7 @@ window.chatmessage = window.Ze = (t, e, i) => {
       linkToUse7 = links[Math.floor(Math.random() * links.length)];
       //tanitim belgeseli
 var colorize,lnk,text,ministyler
-lnk = ["Dont", "click", "here", "or", "else", "you", "will", "die", "but", "really", "DIEPIOPLAY.ORG", "please", "click", "here", "i", "need", "your", "money"];
+lnk = ["Dont", "click", "here", "or", "else", "you", "will", "die", "but", "really", "youtube.com/pewdiepie", "please", "click", "here", "i", "need", "your", "money"];
 text = "<b>";
 lnk.forEach(lnkfunc);
 text += "</b>";
