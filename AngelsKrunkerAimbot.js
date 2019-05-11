@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Angel's Krunker Hack
-// @version      1
+// @version      1.1
 // @description  Aimbot, Unlimited Ammo, Wall Hack, Adblock
 // @author      GamingZann
 // @namespace GamingZann
