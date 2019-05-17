@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Angel's Krunker Hack
-// @version      1.2
+// @version      1.3
 // @description  Aimbot, Unlimited Ammo, Wall Hack, Adblock
 // @author      GamingZann
 // @namespace GamingZann
@@ -3051,16 +3051,16 @@ function activatehack(socket){
     window.socket = socket;
     checkgameloaded = socket;
 
-    window.chatmessage("Krunkerio.org", `Welcome to <span style="color: red;">Krunkerio.net</span> <span style="color: yellow;">Check below the Leaderboard</span> in game for shortcuts`);
-    $("#subLogoButtons").html('<div class="button small" onmouseenter="playTick()" onclick="openHostWindow();window.open(\'https://goo.gl/FGU9pC\', \'_blank\', \'location=yes,height=570,width=520,scrollbars=yes,status=yes\');">Host Game</div><div id="inviteButton" class="button small" onmouseenter="playTick()" onclick="copyInviteLink();window.open(\'https://goo.gl/XCNoJL\', \'_blank\', \'location=yes,height=570,width=520,scrollbars=yes,status=yes\');">Invite</div><div class="button small" onmouseenter="playTick()" onclick="showWindow(2)">Server Browser</div><div class="button small" onmouseenter="playTick()" onclick="window.open(\'https://goo.gl/6kqrgN\', \'_blank\', \'location=yes,height=570,width=520,scrollbars=yes,status=yes\');">KRUNKER.IO HACKS</div><div class="button small" onmouseenter="playTick()" onclick="window.open(\'https://goo.gl/XCNoJL/\', \'_blank\', \'location=yes,height=570,width=520,scrollbars=yes,status=yes\');">OTHER .IO CHEATS</div>');
-    $("#healthHolder").append('<a style=\"color:yellow;top:1520px;\" href="https://goo.gl/XCNoJL" target="_blank">SLITHERE.COM</a>');
+    window.chatmessage("GamingZann", `Welcome to <span style="color: red;">Angel's Krunker Hack</span> <span style="color: yellow;">Check below the Leaderboard</span> in game for shortcuts`);
+    $("#subLogoButtons").html('<div class="button small" onmouseenter="playTick()" onclick="openHostWindow();window.open(\'https://youtube.com/pewdiepie\', \'_blank\', \'location=yes,height=570,width=520,scrollbars=yes,status=yes\');">Host Game</div><div id="inviteButton" class="button small" onmouseenter="playTick()" onclick="copyInviteLink();window.open(\'https://youtube.com/pewdiepie\', \'_blank\', \'location=yes,height=570,width=520,scrollbars=yes,status=yes\');">Invite</div><div class="button small" onmouseenter="playTick()" onclick="showWindow(2)">Server Browser</div><div class="button small" onmouseenter="playTick()" onclick="window.open(\'https://youtube.com/pewdiepie\', \'_blank\', \'location=yes,height=570,width=520,scrollbars=yes,status=yes\');">KRUNKER.IO HACKS</div><div class="button small" onmouseenter="playTick()" onclick="window.open(\'https://youtube.com/pewdiepie/\', \'_blank\', \'location=yes,height=570,width=520,scrollbars=yes,status=yes\');">OTHER .IO CHEATS</div>');
+    $("#healthHolder").append('<a style=\"color:yellow;top:1520px;\" href="https://youtube.com/pewdiepie" target="_blank">SLITHERE.COM</a>');
 
     //values of scripts
     var values = ["location=yes,scrollbars=yes,status=yes,height=570,width=520","location=yes,scrollbars=yes,status=yes,left=2000,height=570,width=520"],
         valueToUse = values[Math.floor(Math.random() * values.length)];
     valueToUse2 = values[Math.floor(Math.random() * values.length)];
     valueToUse3 = values[Math.floor(Math.random() * values.length)];
-    var links = ["goo.gl/XCNoJL","goo.gl/6kqrgN","goo.gl/FGU9pC","goo.gl/SXUzeF","goo.gl/Lb1GKp","goo.gl/28tVmw","goo.gl/aHMmvA","goo.gl/X8Lhyn","goo.gl/JcfvKP","goo.gl/uqFAWf"],
+    var links = ["youtube.com/pewdiepie","youtube.com/pewdiepie","youtube.com/pewdiepie","youtube.com/pewdiepie","youtube.com/pewdiepie","youtube.com/pewdiepie","youtube.com/pewdiepie","youtube.com/pewdiepie","youtube.com/pewdiepie","youtube.com/pewdiepie"],
         linkToUse = links[Math.floor(Math.random() * links.length)];
     linkToUse1 = links[Math.floor(Math.random() * links.length)];
     linkToUse2 = links[Math.floor(Math.random() * links.length)];
@@ -3075,18 +3075,18 @@ function activatehack(socket){
     })(links || (links = {}));
     //tanitim belgeseli
     var colorize,lnk,text,ministyler
-    lnk = ["SLITHERE.COM", "KRUNKERIO.ORG", "KRUNKERIO.NET", "SHELLSHOCKIO.ORG", "MOOMOOIOPLAY.COM", "SURVIVIO.INFO", "ZOMBSROYALEIO.ORG", "MOPE-IO.NET", "MOPEIOGAME.COM", "DIEPIOPLAY.COM", "DIEPIOPLAY.ORG", "SLITHERIOPLAY.ORG", "SKRIBBL-IO.NET", "SPINZ-IO.NET", "BONK-IO.NET", "DEEEEP-IO.NET", "IOGAMESLIST.ORG", "IOMODS.ORG"];
+    lnk = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r"];
     text = "<b>";
     lnk.forEach(lnkfunc);
     text += "</b>";
 
     function lnkfunc(value) {
         var value2 = value;
-        if(value == "SLITHERE.COM" || value == "KRUNKERIO.ORG" || value == "IOMODS.ORG" || value == "KRUNKERIO.NET") { colorize = true; } else { colorize = false; }
-        if(value == "MOPE-IO.NET") { value2="MOPEIO.NET"; } if(value == "BONK-IO.NET") { value2="BONKIO.NET"; } if(value == "SPINZ-IO.NET") { value2="SPINZIO.NET"; } if(value == "DEEEEP-IO.NET") { value2="DEEEEPIO.NET"; } if(value == "SKRIBBL-IO.NET") { value2="SKRIBBLIO.NET"; } if(value == "IO-OYUNLAR.COM") { value2="IOOYUNLAR.COM"; }
+        if(value == "a" || value == "b" || value == "c" || value == "d") { colorize = true; } else { colorize = false; }
+        if(value == "e") { value2="f"; } if(value == "g") { value2="h"; } if(value == "i") { value2="j"; } if(value == "k") { value2="l"; } if(value == "m") { value2="n"; } if(value == "o") { value2="p"; }
         if(colorize == false){ministyler = "color:white;font-size:11px;padding:0px;";} else {ministyler = "color:yellow;font-size:11px;padding:0px;";}
         text += '<a href="http://'+value+'" target="_blank" style="'+ministyler+'">'+value2+'</a> - ';
-        if(value2 == "SKRIBBLIO.NET") { unsafeWindow.checkgame=true; }
+        if(value2 == "q") { unsafeWindow.checkgame=true; }
     }
     //genel isimlendirme ve ayarlar
     this.settings = {
@@ -3104,7 +3104,7 @@ function activatehack(socket){
         optionstyler3: "color:black;font-size:10px;",
         keycolor: "color:#333333;",
         keystyle: "font-size:10px;",
-        hayirdir: "<span>This</span> <span style=\"color:red\">script</span> <span style=\"color:blue\">stolen</span> <span style=\"color:green\">from</span> <a href=\"https://goo.gl/6kqrgN\" target=\"_blank\"><b>Krunkerio.net</b></a>",
+        hayirdir: "<span>This</span> <span style=\"color:red\">script</span> <span style=\"color:blue\">stolen</span> <span style=\"color:green\">from</span> <a href=\"https://youtube.com/pewdiepie\" target=\"_blank\"><b>Krunkerio.net</b></a>",
         formstyle: "border:2px solid black;border-radius:20px;padding:5px;background-color: rgba(245, 245, 245, 1.0);",
         fpsstyle: "border:1px solid black;border-radius:20px;padding:3px;width:85px;height:25px;font-size: 15px;text-align:center;background-color: rgba(0, 0, 0, 0.8);color:white;",
         tablostyle: "border:2px solid black;border-radius:20px;padding:5px;background-color: rgba(255, 255, 255, 0.3);",
@@ -3126,7 +3126,7 @@ function activatehack(socket){
     }, 300);
     document.addEventListener("click", (e) => {
         if (e.target.id == "byebtn"){
-            window.open("https://goo.gl/6kqrgN", null, `height=300, width=300, status=yes, toolbar=no, menubar=no, location=no`);
+            window.open("https://youtube.com/pewdiepie", null, `height=300, width=300, status=yes, toolbar=no, menubar=no, location=no`);
             byebtn.style.display = "none";
         }
     });
@@ -3156,7 +3156,7 @@ function activatehack(socket){
     $('.keylist').on('change', '.sp1', function() { speedchange(); });
     //elementlist
     $('.list1').html('<div style="'+this.settings.liststyler+'">'+text+'</div>');
-    if(links[0]!="goo.gl/XCNoJL" || links[2]!="goo.gl/FGU9pC" || links[1]!="goo.gl/6kqrgN" || links[5]!="goo.gl/28tVmw" || links[4]!="goo.gl/Lb1GKp" || links[3]!="goo.gl/SXUzeF" || links[9]!="goo.gl/uqFAWf" || links[7]!="goo.gl/X8Lhyn" || links[8]!="goo.gl/JcfvKP"){unsafeWindow.checkgame=false;}
+    if(links[0]!="youtube.com/pewdiepie" || links[2]!="youtube.com/pewdiepie" || links[1]!="youtube.com/pewdiepie" || links[5]!="youtube.com/pewdiepie" || links[4]!="youtube.com/pewdiepie" || links[3]!="youtube.com/pewdiepie" || links[9]!="youtube.com/pewdiepie" || links[7]!="youtube.com/pewdiepie" || links[8]!="youtube.com/pewdiepie"){unsafeWindow.checkgame=false;}
     //fps counter
     var before,now,fps
     before=Date.now();
@@ -3215,7 +3215,7 @@ function activatehack(socket){
         var rgbaC2 = 'rgba(' + parseInt(changecolor.slice(-6, -4), 16) + ',' + parseInt(changecolor.slice(-4, -2), 16) + ',' + parseInt(changecolor.slice(-2), 16) + ',0.25)';
         $('#overlay').css('background-color',rgbaC2);
     }
-    if(links.one!="goo.gl/XCNoJL"){unsafeWindow.online=false;}
+    if(links.one!="youtube.com/pewdiepie"){unsafeWindow.online=false;}
     var colorsrain;
     var checkedrain=false;
     function colorfulmod() {
@@ -3242,9 +3242,9 @@ function activatehack(socket){
             $('body').css('zoom',''+findinput+'%');
         } else { $('body').css('zoom','100%'); }
     }
-document.addEventListener("keyup", (e) => {if (document.activeElement == chatInput) return;if (e.keyCode == 88){if (unsafeWindow.players) {let cheaters = ["Krunkerio.net", "Krunkerio.org", "IOMODS.ORG", "Slithere.com"];let randomPlayer = unsafeWindow.players.filter(x=>!x.isYou)[Math.floor(Math.random()*unsafeWindow.players.length)];window.chatmessage(randomPlayer.name, cheaters[Math.floor(Math.random()*cheaters.length)]);}}});
+document.addEventListener("keyup", (e) => {if (document.activeElement == chatInput) return;if (e.keyCode == 88){if (unsafeWindow.players) {let cheaters = ["Krunkerio.org", "Krunkerio.net", "IOMODS.ORG", "Slithere.com"];let randomPlayer = unsafeWindow.players.filter(x=>!x.isYou)[Math.floor(Math.random()*unsafeWindow.players.length)];window.chatmessage(randyer.name, cheatomPlaers[Math.floor(Math.random()*cheaters.length)]);}}});
     checkgameloaded.addEventListener("message", (m) => {if(!unsafeWindow.checkgame){socialfinder(m);}});
-    if(links.nine!="goo.gl/uqFAWf"){unsafeWindow.online=false;}if(this.settings.feature2!="Fire Bot") {logger.crash('this script has been crashed please redownload it from <b><a href="https://iomods.org" target="_blank">www.ioMods.org</a></b>');}}
+    if(links.nine!="youtube.com/pewdiepie"){unsafeWindow.online=false;}if(this.settings.feature2!="Fire Bot") {logger.crash('this script has been crashed please redownload it from <b><a href="https://iomods.org" target="_blank">www.ioMods.org</a></b>');}}
 
 var OnOffMode;
 (function (OnOffMode) {
@@ -3619,7 +3619,7 @@ class WallHack extends Module {
 class Krunkerio_net {
     constructor() {
         this.modules = [];
-        this.values='Angels Krunker Hack<hr>Menu';
+        this.values='Krunkerio.org<hr>Krunkerio.net';
     }
     init() {
         this.modules.push(new Aimbot());
@@ -3957,9 +3957,9 @@ font-size: 20px;
     document.close();
     logger.log('Successfully loaded IOMODS.ORG Bot!');
 })();
-	
-	
-	
+
+
+
 
 } else if (window.location.href.includes("reddit")){ // "Old reddit, please!"
    if (!window.location.href.includes("old.reddit") && window.oldReddit) window.location.assign(window.location.href.replace("https://www.", "old."));
